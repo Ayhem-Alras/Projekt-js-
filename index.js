@@ -22,9 +22,9 @@ document.write(text);
 function analyzeText(text) {
     
     // Anzahl der Wörter im Text
-    let wordCount = text.split(/\s+/).filter(word => word !== "").length;
+    let wordCount = text.split(" ").length;
 
-    // Anzahl unterschiedlicher Wörter
+    // anzahl unterschiedlicher Wörter
     let uniqueWords = new Set(text.split(/\s+/)).size;
 
     // Längstes Wort im Text
